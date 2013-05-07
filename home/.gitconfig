@@ -1,0 +1,10 @@
+[user]
+	name = Patrick Baselier
+	email = patrick@kabisa.nl
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  editor = /usr/local/bin/vim
