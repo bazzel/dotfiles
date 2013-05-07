@@ -1,0 +1,19 @@
+let g:Powerline_symbols = 'compatible'
+set nocompatible   " Disable vi-compatibility
+set laststatus=2   " Always show the statusline
+set encoding=utf-8 " Necessary to show Unicode glyphs
+set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
+
+" Automatically removing all trailing whitespace
+fun! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  %s/\t/  /ge
+  call cursor(l, c)
+endfun
+
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+au! BufRead,BufNewFile *.hamlc setfiletype haml
+
+map <Leader>rt :!silent ctags --extra=+f --exclude=.git --exclude=log --exclude=tmp --recurse=yes * `rvm gemdir`/gems/*<CR><CR>
