@@ -58,7 +58,7 @@ alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${O
 # demo
 alias sod="ssh oss@oss@oss-demo.ddns.htc.nl.philips.com"
 # unity test
-alias soun='ssh -i ~/.ssh/developers.pem ubuntu@54.228.193.84'
+alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
 # user test
 alias sous="ssh ubuntu@54.228.230.235 -i ~/.ssh/philips.pem"
 # staging
