@@ -50,6 +50,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 
 # Aliases
+alias ag='alias | grep '
 # Projects
 export OSSYOR_ROOT='~/code/philips-oss/ossyor'
 alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSYOR_ROOT} && teamocil --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
