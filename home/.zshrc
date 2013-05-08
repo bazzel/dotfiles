@@ -50,10 +50,23 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 
 # Aliases
-alias ag='alias | grep '
 # Projects
+# Philips OSS
 export OSSYOR_ROOT='~/code/philips-oss/ossyor'
+export OSSYOR_DOMAIN='pwl.philips.com'
 alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSYOR_ROOT} && teamocil --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
+# demo
+alias sod="ssh oss@oss@oss-demo.ddns.htc.nl.philips.com"
+# unity test
+alias soun='ssh -i ~/.ssh/developers.pem ubuntu@54.228.193.84'
+# user test
+alias sous="ssh ubuntu@54.228.230.235 -i ~/.ssh/philips.pem"
+# staging
+alias sos="ssh ubuntu@staging.${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
+# production
+alias sop="ssh ubuntu@${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
+
+alias ag='alias | grep '
 
 # bundler
 alias be='bundle exec'
@@ -78,4 +91,5 @@ alias zshrc='vim ~/.zshrc && reload'
 alias hcd='homesick commit dotfiles'
 alias hpd='homesick push dotfiles'
 alias hsd='homesick symlink dotfiles'
+
 
