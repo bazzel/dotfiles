@@ -24,7 +24,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want to disable command autocorrection
 # DISABLE_CORRECTION="true"
@@ -58,6 +58,14 @@ alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${O
 # bundler
 alias be='bundle exec'
 
+# Rails, cuke and more
+alias gpr='git remote prune origin' # Always forget this one...
+alias gba='git fetch && git branch -a'
+alias br='be rake'
+alias cu='be cucumber'
+alias wip='be cucumber -r features -p wip'
+alias rtg='be rake -T | grep ' # Grep rake tasks: rtg database
+
 # autojump
 # https://github.com/joelthelion/autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -70,3 +78,4 @@ alias zshrc='vim ~/.zshrc && reload'
 alias hcd='homesick commit dotfiles'
 alias hpd='homesick push dotfiles'
 alias hsd='homesick symlink dotfiles'
+
