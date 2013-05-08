@@ -40,7 +40,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -53,3 +53,10 @@ export PATH="/usr/local/share/python:$PATH"
 # Projects
 export OSSYOR_ROOT='~/code/philips-oss/ossyor'
 alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSYOR_ROOT} && teamocil --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
+
+# bundler
+alias be='bundle exec'
+
+# autojump
+# https://github.com/joelthelion/autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
