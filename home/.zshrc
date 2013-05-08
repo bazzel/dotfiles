@@ -60,3 +60,12 @@ alias be='bundle exec'
 # autojump
 # https://github.com/joelthelion/autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+# Working with these dotfiles made easier
+alias reload='source ~/.zshrc'
+alias zshrc='vim ~/.zshrc && reload'
+
+# homesick
+alias hcd='homesick commit dotfiles'
+alias hpd='homesick push dotfiles'
+alias hsd='homesick symlink dotfiles'
