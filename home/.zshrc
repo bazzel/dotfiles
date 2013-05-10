@@ -42,15 +42,22 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump)
 
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+# autojump
+# https://github.com/joelthelion/autojump
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 
 # Aliases
+#
 # Projects
+#
 # Philips OSS
 export OSSYOR_ROOT='~/code/philips-oss/ossyor'
 export OSSYOR_DOMAIN='pwl.philips.com'
@@ -67,6 +74,7 @@ alias sos="ssh ubuntu@staging.${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
 alias sop="ssh ubuntu@${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
 
 alias ag='alias | grep '
+alias gi='gem install '
 
 # bundler
 alias be='bundle exec'
@@ -79,9 +87,11 @@ alias cu='be cucumber'
 alias wip='be cucumber -r features -p wip'
 alias rtg='be rake -T | grep ' # Grep rake tasks: rtg database
 
-# autojump
-# https://github.com/joelthelion/autojump
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+# Middleman (middlemanapp.com)
+alias mm='middleman'
+alias mmb='mm build'
+alias mmi='mm init'
+alias mmd='mm deploy'
 
 # Working with these dotfiles made easier
 alias reload='source ~/.zshrc'
@@ -91,5 +101,3 @@ alias zshrc='vim ~/.zshrc && reload'
 alias hcd='homesick commit dotfiles'
 alias hpd='homesick push dotfiles'
 alias hsd='homesick symlink dotfiles'
-
-
