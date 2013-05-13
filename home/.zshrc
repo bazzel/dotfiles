@@ -62,6 +62,7 @@ export PATH="/usr/local/share/python:$PATH"
 export OSSYOR_ROOT='~/code/philips-oss/ossyor'
 export OSSYOR_DOMAIN='pwl.philips.com'
 alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSYOR_ROOT} && teamocil --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
+alias spl='ssh pairing@localhost'
 # demo
 alias sod="ssh oss@oss@oss-demo.ddns.htc.nl.philips.com"
 # unity test
