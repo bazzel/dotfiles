@@ -59,9 +59,12 @@ export PATH="/usr/local/share/python:$PATH"
 # Projects
 #
 # Philips OSS
-export OSSYOR_ROOT='~/code/philips-oss/ossyor'
+export OSS_ROOT='~/code/philips-oss'
+export OSSYOR_ROOT="${OSS_ROOT}/ossyor"
+export OSSACT_ROOT="${OSS_ROOT}/ossact"
 export OSSYOR_DOMAIN='pwl.philips.com'
 alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSYOR_ROOT} && teamocil --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
+alias tmux-ossact="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSACT_ROOT} && teamocil --layout ${OSSACT_ROOT}/scripts/asset_structure_builder/tools/teamocil.yml"
 alias spl='ssh pairing@localhost'
 # demo
 alias sod="ssh oss@oss@oss-demo.ddns.htc.nl.philips.com"
