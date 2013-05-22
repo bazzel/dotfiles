@@ -4,3 +4,6 @@
 [submodule "home/.janus/tabular"]
 	path = home/.janus/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "home/.janus/vim-blockle"]
+	path = home/.janus/vim-blockle
+	url = https://github.com/jgdavey/vim-blockle
