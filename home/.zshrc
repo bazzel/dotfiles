@@ -54,6 +54,10 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 
+# Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Aliases
 #
 # Projects
@@ -105,4 +109,3 @@ alias zshrc='vim ~/.zshrc && reload'
 alias hcd='homesick commit dotfiles'
 alias hpd='homesick push dotfiles'
 alias hsd='homesick symlink dotfiles'
-
