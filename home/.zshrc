@@ -101,6 +101,10 @@ alias mmb='mm build'
 alias mmi='mm init'
 alias mmd='mm deploy'
 
+# Konacha
+alias rks='br konacha:serve'
+alias rkr='br konacha:run'
+
 # Working with these dotfiles made easier
 alias reload='source ~/.zshrc'
 alias zshrc='vim ~/.zshrc && reload'
