@@ -71,7 +71,7 @@ alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${O
 alias tmux-ossact="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSACT_ROOT} && teamocil --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
 alias spl='ssh pairing@localhost'
 # demo
-alias sod="ssh oss@oss@oss-demo.ddns.htc.nl.philips.com"
+alias sod="ssh oss@oss-demo.ddns.htc.nl.philips.com"
 # unity test
 alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
 # user test
