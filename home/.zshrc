@@ -71,7 +71,7 @@ alias tmux-ossyor="tmux set-option default-path ${OSSYOR_ROOT} && teamocil --her
 alias tmux-ossact="tmux set-option default-path ${OSSACT_ROOT} && teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
 alias spl='ssh pairing@localhost'
 # content
-alias soc="ssh ubuntu@content.${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
+alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/philips.pem"
 # demo
 alias sod="ssh oss@oss-demo.ddns.htc.nl.philips.com"
 # unity test
@@ -79,9 +79,9 @@ alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
 # user test
 alias sous="ssh ubuntu@54.228.230.235 -i ~/.ssh/philips.pem"
 # staging
-alias sos="ssh ubuntu@staging.${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
+alias sos="ssh ubuntu@origin.www.staging.pwl.philips.com -i ~/.ssh/philips.pem"
 # production
-alias sop="ssh ubuntu@${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
+alias sop="ssh ubuntu@origin.www.pwl.philips.com -i ~/.ssh/philips.pem"
 
 alias ag='alias | grep '
 alias gi='gem install '
