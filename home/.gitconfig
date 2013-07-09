@@ -10,3 +10,5 @@
   editor = /usr/local/bin/vim
 [push]
   default = current
+[alias]
+  releasenotes = "!git log ${1}.. --pretty=format:'%h - %Cgreen%ad%Creset - %an: %C(bold white)%s%Creset' --grep=pivotal --date=short"

@@ -67,9 +67,11 @@ export OSS_ROOT='~/code/philips-oss'
 export OSSYOR_ROOT="${OSS_ROOT}/ossyor"
 export OSSACT_ROOT="${OSS_ROOT}/ossact"
 export OSSYOR_DOMAIN='pwl.philips.com'
-alias tmux-ossyor="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSYOR_ROOT} && teamocil --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
-alias tmux-ossact="tmux rename-window 'Zoom' && tmux set-option default-path ${OSSACT_ROOT} && teamocil --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
+alias tmux-ossyor="tmux set-option default-path ${OSSYOR_ROOT} && teamocil --here --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
+alias tmux-ossact="tmux set-option default-path ${OSSACT_ROOT} && teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
 alias spl='ssh pairing@localhost'
+# content
+alias soc="ssh ubuntu@content.${OSSYOR_DOMAIN} -i ~/.ssh/philips.pem"
 # demo
 alias sod="ssh oss@oss-demo.ddns.htc.nl.philips.com"
 # unity test
