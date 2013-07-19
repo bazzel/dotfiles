@@ -7,3 +7,6 @@
 [submodule "home/.janus/vim-blockle"]
 	path = home/.janus/vim-blockle
 	url = https://github.com/jgdavey/vim-blockle
+[submodule "home/.janus/zencoding-vim"]
+	path = home/.janus/zencoding-vim
+	url = http://github.com/mattn/zencoding-vim.git

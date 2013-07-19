@@ -46,6 +46,8 @@ plugins=(git autojump)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export BUNDLER_EDITOR=vim
+
 # autojump
 # https://github.com/joelthelion/autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
@@ -71,13 +73,13 @@ alias tmux-ossyor="tmux set-option default-path ${OSSYOR_ROOT} && teamocil --her
 alias tmux-ossact="tmux set-option default-path ${OSSACT_ROOT} && teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
 alias spl='ssh pairing@localhost'
 # content
-alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/philips.pem"
+alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/developers.pem"
 # demo
 alias sod="ssh oss@oss-demo.ddns.htc.nl.philips.com"
 # unity test
 alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
 # user test
-alias sous="ssh ubuntu@54.228.230.235 -i ~/.ssh/philips.pem"
+alias sous="ssh ubuntu@54.228.230.235 -i ~/.ssh/developers.pem"
 # staging
 alias sos="ssh ubuntu@origin.www.staging.pwl.philips.com -i ~/.ssh/philips.pem"
 # production
