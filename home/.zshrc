@@ -77,7 +77,8 @@ alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/developers.pe
 # demo
 alias sod="ssh oss@oss-demo.ddns.htc.nl.philips.com"
 # unity test
-alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
+#alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
+alias soun="ssh ubuntu@origin.www.unity.pwl.philips.com -i ~/.ssh/developers.pem"
 # user test
 alias sous="ssh ubuntu@54.228.230.235 -i ~/.ssh/developers.pem"
 # staging
