@@ -20,6 +20,7 @@ endfun
 " CtrlP working directory
 " https://github.com/kien/ctrlp.vim
 let g:ctrlp_root_markers = ['Gemfile', '.git']
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/bundle/*,*/.bundle/*,*/.git/*,*/doc/app/*,*/spec/reports/*
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 au! BufRead,BufNewFile *.hamlc setfiletype haml
