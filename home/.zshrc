@@ -86,6 +86,7 @@ alias sos="ssh ubuntu@origin.www.staging.pwl.philips.com -i ~/.ssh/philips.pem"
 # production
 alias sop="ssh ubuntu@origin.www.pwl.philips.com -i ~/.ssh/philips.pem"
 
+alias srpb='ssh root@patrickbaselier.nl'
 alias ag='alias | grep '
 alias gi='gem install '
 
