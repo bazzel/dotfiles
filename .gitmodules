@@ -13,3 +13,6 @@
 [submodule "home/.janus/vim-ruby-refactoring"]
 	path = home/.janus/vim-ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring
+[submodule "home/.janus/vim-emblem"]
+	path = home/.janus/vim-emblem
+	url = https://github.com/heartsentwined/vim-emblem.git
