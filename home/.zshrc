@@ -55,6 +55,7 @@ export BUNDLER_EDITOR=vim
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
+export PATH="/usr/local/share/npm/bin:$PATH"
 
 # Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
 export LC_ALL=en_US.UTF-8
@@ -75,12 +76,12 @@ alias spl='ssh pairing@localhost'
 # content
 alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/developers.pem"
 # demo
-alias sod="ssh oss@oss-demo.ddns.htc.nl.philips.com"
+alias sod="ssh ubuntu@origin.www.demo.pwl.philips.com -i ~/.ssh/developers.pem"
 # unity test
 #alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
 alias soun="ssh ubuntu@origin.www.unity.pwl.philips.com -i ~/.ssh/developers.pem"
 # user test
-alias sous="ssh ubuntu@54.228.230.235 -i ~/.ssh/developers.pem"
+alias sous="ssh ubuntu@origin.www.test.pwl.philips.com -i ~/.ssh/philips.pem"
 # staging
 alias sos="ssh ubuntu@origin.www.staging.pwl.philips.com -i ~/.ssh/philips.pem"
 # production
@@ -102,7 +103,7 @@ alias wip='be cucumber -r features -p wip'
 alias rtg='be rake -T | grep ' # Grep rake tasks: rtg database
 
 # Middleman (middlemanapp.com)
-alias mm='middleman'
+alias mm='bundle exec middleman'
 alias mmb='mm build'
 alias mmi='mm init'
 alias mmd='mm deploy'
@@ -119,3 +120,6 @@ alias zshrc='vim ~/.zshrc && reload'
 alias hcd='homesick commit dotfiles'
 alias hpd='homesick push dotfiles'
 alias hsd='homesick symlink dotfiles'
+
+# Pair programming
+alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick@kabisa.nl>"'
