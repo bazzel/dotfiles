@@ -24,3 +24,8 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/bundle/*,*/.bundle/*,*/.git/*,
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 au! BufRead,BufNewFile *.hamlc setfiletype haml
+
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
