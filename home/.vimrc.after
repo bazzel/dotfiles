@@ -32,11 +32,11 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 
 " Mapping for Tabularize (http://vimcasts.org/episodes/aligning-text-with-tabular-vim)
 if exists(":Tabularize")
-  nmap <Leader>a| :Tabularize /|<CR>
-  vmap <Leader>a| :Tabularize /|<CR>
-  nmap <Leader>a= :Tabularize /=<CR>
-  vmap <Leader>a= :Tabularize /=<CR>
-  nmap <Leader>a: :Tabularize /:\zs<CR>
-  vmap <Leader>a: :Tabularize /:\zs<CR>
+  nmap <Leader>tab<bar> :Tabularize /<bar><CR>
+  vmap <Leader>tab<bar> :Tabularize /<bar><CR>
+  nmap <Leader>tab= :Tabularize /=<CR>
+  vmap <Leader>tab= :Tabularize /=<CR>
+  nmap <Leader>tab: :Tabularize /:\zs<CR>
+  vmap <Leader>tab: :Tabularize /:\zs<CR>
 endif
 
