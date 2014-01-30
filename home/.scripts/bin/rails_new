@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Create a new Rails application
+#
+# Example:
+#   sh rails_new my_app
+
 app_name=$1
 
 echo "Creating a new Rails application in $(pwd)/$1..."
