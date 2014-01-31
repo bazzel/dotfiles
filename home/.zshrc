@@ -56,7 +56,7 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
-export PATH="$PATH:~/.scripts"
+export PATH="$PATH:~/.scripts/bin"
 
 # Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
 export LC_ALL=en_US.UTF-8
@@ -124,3 +124,8 @@ alias hsd='homesick symlink dotfiles'
 
 # Pair programming
 alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick@kabisa.nl>"'
+
+
+# Custom sripts
+# Find them in ~/.scripts/bin
+alias rails_new='sh rails_new'
