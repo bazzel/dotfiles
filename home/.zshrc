@@ -102,7 +102,6 @@ alias br='be rake'
 alias cu='be cucumber'
 alias wip='be cucumber -r features -p wip'
 alias rtg='be rake -T | grep ' # Grep rake tasks: rtg database
-
 # Middleman (middlemanapp.com)
 alias mm='bundle exec middleman'
 alias mmb='mm build'
@@ -129,3 +128,12 @@ alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick
 # Custom sripts
 # Find them in ~/.scripts/bin
 alias rails_new='sh rails_new'
+
+# Functions
+#
+#
+# mrt (my rails templates)...
+mrt() {
+  bundle exec rake rails:template LOCATION=~/code/personal/rails-templates/"$*".rb
+}
+
