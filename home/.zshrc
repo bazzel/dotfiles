@@ -54,7 +54,6 @@ export BUNDLER_EDITOR=vim
 
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-export PATH="/usr/local/share/python:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$PATH:~/.scripts/bin"
 
@@ -62,8 +61,7 @@ export PATH="$PATH:~/.scripts/bin"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# Aliases
-#
+
 # Projects
 #
 # Philips OSS
@@ -71,8 +69,13 @@ export OSS_ROOT='~/code/philips-oss'
 export OSSYOR_ROOT="${OSS_ROOT}/ossyor"
 export OSSACT_ROOT="${OSS_ROOT}/ossact"
 export OSSYOR_DOMAIN='pwl.philips.com'
+export TACTIC_ASSET_CHECKIN_ROOT='/Volumes/2013-5023_ossassetbackup_ux'
+
+# Aliases
+#
 alias tmux-ossyor="tmux set-option default-path ${OSSYOR_ROOT} && teamocil --here --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
 alias tmux-ossact="tmux set-option default-path ${OSSACT_ROOT} && teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
+alias tmux-osstactic="tmux set-option default-path ${OSSACT_ROOT}/tactic/python_scripts && teamocil --here --layout ${OSSACT_ROOT}/tactic/python_scripts/tools/teamocil.yml"
 alias spl='ssh pairing@localhost'
 # content
 alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/developers.pem"
@@ -137,3 +140,5 @@ mrt() {
   bundle exec rake rails:template LOCATION=~/code/personal/rails-templates/"$*".rb
 }
 
+# pyenv: enable shims and autocompletion:
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi

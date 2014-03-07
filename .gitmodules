@@ -16,3 +16,9 @@
 [submodule "home/.janus/vim-emblem"]
 	path = home/.janus/vim-emblem
 	url = https://github.com/heartsentwined/vim-emblem.git
+[submodule "home/.janus/home/.janus/projections.vim"]
+	path = home/.janus/home/.janus/projections.vim
+	url = https://github.com/malkomalko/projections.vim.git
+[submodule "home/.janus/projections.vim"]
+	path = home/.janus/projections.vim
+	url = https://github.com/malkomalko/projections.vim.git
