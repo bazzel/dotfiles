@@ -56,6 +56,7 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$PATH:~/.scripts/bin"
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
 export LC_ALL=en_US.UTF-8
@@ -142,3 +143,4 @@ mrt() {
 
 # pyenv: enable shims and autocompletion:
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
