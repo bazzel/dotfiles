@@ -10,7 +10,7 @@ app_name=$1
 echo "Creating a new Rails application in $(pwd)/$1..."
 
 mkdir $1
-echo "rvm use 2.0.0@$1 --create" > $1/.rvmrc
+echo "rvm use 2.1@$1 --create" > $1/.rvmrc
 cd $1
 gem install rails -N
 rails new .
