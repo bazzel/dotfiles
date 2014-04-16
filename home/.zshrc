@@ -42,7 +42,6 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git autojump)
 
-
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -56,12 +55,10 @@ export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$PATH:~/.scripts/bin"
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-
 
 # Projects
 #
@@ -74,9 +71,10 @@ export TACTIC_ASSET_CHECKIN_ROOT='/Volumes/2013-5023_ossassetbackup_ux'
 
 # Aliases
 #
-alias tmux-ossyor="tmux set-option default-path ${OSSYOR_ROOT} && teamocil --here --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
-alias tmux-ossact="tmux set-option default-path ${OSSACT_ROOT} && teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
-alias tmux-osstactic="tmux set-option default-path ${OSSACT_ROOT}/tactic/python_scripts && teamocil --here --layout ${OSSACT_ROOT}/tactic/python_scripts/tools/teamocil.yml"
+alias tmux-ossyor="teamocil --here --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
+alias tmux-ossact="teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
+alias tmux-osstactic="teamocil --here --layout ${OSSACT_ROOT}/tactic/python_scripts/tools/teamocil.yml"
+
 alias spl='ssh pairing@localhost'
 # content
 alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/developers.pem"
@@ -128,7 +126,6 @@ alias hsd='homesick symlink dotfiles'
 # Pair programming
 alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick@kabisa.nl>"'
 
-
 # Custom sripts
 # Find them in ~/.scripts/bin
 alias rails_new='sh rails_new'
@@ -144,3 +141,4 @@ mrt() {
 # pyenv: enable shims and autocompletion:
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
