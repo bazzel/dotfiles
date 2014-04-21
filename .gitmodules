@@ -19,3 +19,6 @@
 [submodule "home/.janus/home/.janus/projections.vim"]
 	path = home/.janus/home/.janus/projections.vim
 	url = https://github.com/malkomalko/projections.vim.git
+[submodule "home/.janus/ember.vim"]
+	path = home/.janus/ember.vim
+	url = https://github.com/dsawardekar/ember.vim
