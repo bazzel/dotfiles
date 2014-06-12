@@ -142,4 +142,5 @@ mrt() {
 # pyenv: enable shims and autocompletion:
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
