@@ -105,6 +105,9 @@ alias cu='be cucumber'
 alias wip='be cucumber -r features -p wip'
 alias rtg='be rake -T | grep ' # Grep rake tasks: rtg database
 alias zues='zeus'
+alias zcu='zeus cucumber'
+alias zwip='zeus cucumber -p wip'
+alias zr='zeus rake'
 # Middleman (middlemanapp.com)
 alias mm='bundle exec middleman'
 alias mmb='mm build'
