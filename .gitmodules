@@ -4,9 +4,6 @@
 [submodule "home/.janus/vim-blockle"]
   path = home/.janus/vim-blockle
   url = https://github.com/jgdavey/vim-blockle
-[submodule "home/.janus/zencoding-vim"]
-  path = home/.janus/zencoding-vim
-  url = http://github.com/mattn/zencoding-vim.git
 [submodule "home/.janus/vim-ruby-refactoring"]
   path = home/.janus/vim-ruby-refactoring
   url = https://github.com/ecomba/vim-ruby-refactoring
@@ -16,3 +13,9 @@
 [submodule "home/.janus/vim-airline"]
   path = home/.janus/vim-airline
   url = https://github.com/bling/vim-airline.git
+[submodule "home/.janus/vim-mustache-handlebars"]
+  path = home/.janus/vim-mustache-handlebars
+  url = git://github.com/mustache/vim-mustache-handlebars.git
+[submodule "home/.janus/emmet-vim"]
+  path = home/.janus/emmet-vim
+  url = https://github.com/mattn/emmet-vim.git

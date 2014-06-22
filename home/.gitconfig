@@ -8,7 +8,7 @@
   branch = auto
 [core]
   editor = /usr/local/bin/vim
-	excludesfile = /Users/patrick/.gitignore_global
+	excludesfile = /Users/patrickbaselier/.gitignore_global
 [push]
   default = current
 [alias]
