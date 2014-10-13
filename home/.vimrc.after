@@ -48,12 +48,6 @@ if exists(":Tabularize")
   vmap <Leader>tab: :Tabularize /:\zs<CR>
 endif
 
-" RSpec.vim mappings (https://github.com/thoughtbot/vim-rspec)
-"map <Leader>t :call RunCurrentSpecFile()<CR>
-"map <Leader>s :call RunNearestSpec()<CR>
-"map <Leader>l :call RunLastSpec()<CR>
-"map <Leader>a :call RunAllSpecs()<CR>
-
 " Vim shortcuts for rspec and cucumber tests.vim
 " See also https://gist.github.com/Integralist/8115457
 " Run currently open RSpec test file
