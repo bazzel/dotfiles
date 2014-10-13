@@ -19,6 +19,3 @@
 [submodule "home/.janus/emmet-vim"]
   path = home/.janus/emmet-vim
   url = https://github.com/mattn/emmet-vim.git
-[submodule "home/.janus/vim-rspec"]
-	path = home/.janus/vim-rspec
-	url = https://github.com/thoughtbot/vim-rspec.git
