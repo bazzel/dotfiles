@@ -18,7 +18,7 @@
 # less -r
 
 --ignore-dir=tmp/
---ignore-dir=bower_components/
+#--ignore-dir=bower_components/
 --ignore-dir=dist/
 
 #make sure ack knows how to search common filetypes used in rails projects

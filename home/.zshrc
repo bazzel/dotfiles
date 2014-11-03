@@ -151,3 +151,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # http://direnv.net/
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
