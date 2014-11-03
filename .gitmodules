@@ -19,6 +19,3 @@
 [submodule "home/.janus/emmet-vim"]
   path = home/.janus/emmet-vim
   url = https://github.com/mattn/emmet-vim.git
-[submodule "home/.janus/smartest.vim"]
-	path = home/.janus/smartest.vim
-	url = https://github.com/kurko/smartest.vim
