@@ -1,0 +1,32 @@
+
+session:
+  name: "Osspublish"
+  windows:
+    #- name: "Daemons"
+      #root: <%= ENV['OSSYOR_ROOT'] %>
+      #layout: tiled
+      #panes:
+        #- cmd: ""
+        #- cmd: ""
+        #- cmd: ""
+          #width: 50
+    - name: "Editing"
+      focus: true
+      root: <%= ENV['OSSPUBLISH_ROOT'] %>
+      panes:
+        - cmd: "vim"
+          focus: true
+    #- name: "Test"
+      #root: <%= ENV['OSSYOR_ROOT'] %>
+      #panes:
+        #- cmd: ''
+        #- cmd: ''
+          #width: 50
+    - name: "Console"
+      root: <%= ENV['OSSYOR_ROOT'] %>
+      panes:
+        - cmd: "git fetch; /usr/local/bin/ctags -R ."
+    #- name: 'Documentation'
+      #root: <%= ENV['OSSYOR_ROOT'] %>/../ossdocs
+      #panes:
+        #- cmd: 'vim .'

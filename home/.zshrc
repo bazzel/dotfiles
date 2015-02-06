@@ -65,13 +65,15 @@ export LANG=en_US.UTF-8
 # Philips OSS
 export OSS_ROOT='~/code/philips-oss'
 export OSSYOR_ROOT="${OSS_ROOT}/ossyor"
+export OSSPUBLISH_ROOT="${OSS_ROOT}/osspublish"
 export OSSACT_ROOT="${OSS_ROOT}/ossact"
 export OSSYOR_DOMAIN='pwl.philips.com'
 export TACTIC_ASSET_CHECKIN_ROOT='/Volumes/2013-5023_ossassetbackup_ux'
 
 # Aliases
 #
-alias tmux-ossyor="teamocil --here --layout ${OSSYOR_ROOT}/tools/teamocil.yml"
+alias tmux-ossyor="teamocil --here --layout ~/.teamocil/ossyor.yml"
+alias tmux-osspublish="teamocil --here --layout ~/.teamocil/osspublish.yml"
 alias tmux-ossact="teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
 alias tmux-osstactic="teamocil --here --layout ${OSSACT_ROOT}/tactic/python_scripts/tools/teamocil.yml"
 
