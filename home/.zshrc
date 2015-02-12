@@ -56,6 +56,10 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$PATH:~/.scripts/bin"
 
+# http://golang.org/doc/code.html#GOPATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -156,3 +160,5 @@ if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+export ANSIBLE_HOSTS=hosts.local

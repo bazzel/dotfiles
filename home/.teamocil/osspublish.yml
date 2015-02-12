@@ -23,7 +23,7 @@ session:
         #- cmd: ''
           #width: 50
     - name: "Console"
-      root: <%= ENV['OSSYOR_ROOT'] %>
+      root: <%= ENV['OSSPUBLISH_ROOT'] %>
       panes:
         - cmd: "git fetch; /usr/local/bin/ctags -R ."
     #- name: 'Documentation'
