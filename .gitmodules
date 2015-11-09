@@ -22,3 +22,6 @@
 [submodule "home/.janus/smartest"]
   path = home/.janus/smartest
   url = https://github.com/kurko/smartest.vim
+[submodule "home/.janus/vim-rbenv"]
+	path = home/.janus/vim-rbenv
+	url = https://github.com/tpope/vim-rbenv

@@ -162,3 +162,4 @@ if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 export PATH="/usr/local/heroku/bin:$PATH"
 
 export ANSIBLE_HOSTS=hosts.local
+export ANDROID_HOME=/usr/local/opt/android-sdk

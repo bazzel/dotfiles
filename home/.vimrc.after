@@ -28,6 +28,7 @@ set wildignore+=*/node_modules/*
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 au! BufRead,BufNewFile *.hamlc setfiletype haml
+autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
 " Enable autocomplete
 " autocomplete with Ctrl+x, Ctrl+o
