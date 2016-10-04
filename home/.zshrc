@@ -52,9 +52,11 @@ export BUNDLER_EDITOR=vim
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-export PATH="/usr/local/share/npm/bin:$PATH"
-export PATH="$PATH:~/.scripts/bin"
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+export PATH=/usr/local/share/npm/bin:$PATH
+# Add project-specific binstubs to PATH:
+export PATH=./bin:$PATH
+#export PATH="$PATH:~/.scripts/bin"
 
 # http://golang.org/doc/code.html#GOPATH
 export GOPATH=$HOME/go
@@ -73,6 +75,17 @@ export OSSPUBLISH_ROOT="${OSS_ROOT}/osspublish"
 export OSSACT_ROOT="${OSS_ROOT}/ossact"
 export OSSYOR_DOMAIN='pwl.philips.com'
 export TACTIC_ASSET_CHECKIN_ROOT='/Volumes/2013-5023_ossassetbackup_ux'
+# End Philips OSS
+#
+# ASML
+export ORACLE_HOME=/usr/local/oracle/instantclient_11_2
+export OCI_DIR=$ORACLE_HOME
+#export LD_LIBRARY_PATH=$ORACLE_HOME/lib
+export NLS_LANG="AMERICAN_AMERICA.UTF8"
+export PATH=$PATH:$ORACLE_HOME
+# End ASML
+#
+# End Projects
 
 # Aliases
 #
@@ -96,33 +109,27 @@ alias sos="ssh ubuntu@origin.www.staging.pwl.philips.com -i ~/.ssh/philips.pem"
 # production
 alias sop="ssh ubuntu@origin.www.pwl.philips.com -i ~/.ssh/philips.pem"
 
-alias srpb='ssh root@patrickbaselier.nl'
 alias ag='alias | grep '
 alias gi='gem install '
-
-# bundler
-alias be='bundle exec'
 
 # Rails, cuke and more
 alias gpr='git remote prune origin' # Always forget this one...
 alias gba='git fetch && git branch -a'
-alias br='be rake'
-alias cu='be cucumber'
-alias wip='be cucumber -r features -p wip'
-alias rtg='be rake -T | grep ' # Grep rake tasks: rtg database
+alias wip='bin/rake cucumber:wip'
+alias rtg='bin/rake -T | grep ' # Grep rake tasks: rtg database
 alias zues='zeus'
 alias zcu='zeus cucumber'
 alias zwip='zeus cucumber -r features -p wip'
 alias zr='zeus rake'
 # Middleman (middlemanapp.com)
-alias mm='bundle exec middleman'
+alias mm='middleman'
 alias mmb='mm build'
 alias mmi='mm init'
 alias mmd='mm deploy'
 
 # Konacha
-alias rks='br konacha:serve'
-alias rkr='br konacha:run'
+alias rks='konacha:serve'
+alias rkr='konacha:run'
 
 # Working with these dotfiles made easier
 alias reload='source ~/.zshrc'
@@ -133,12 +140,22 @@ alias hcd='homesick commit dotfiles'
 alias hpd='homesick push dotfiles'
 alias hsd='homesick symlink dotfiles'
 
+# ASML
+alias asmlsshpdflithostag='ssh wwwsdev@nlseir201.sn-eu.asml.com'
+alias asmlsshpdflithoprod='ssh wwwsdev@nlseir202.sn-eu.asml.com'
+alias asmlsshfcolithostag='ssh wwwsdev@nlseir203.sn-eu.asml.com'
+alias asmlsshfcolithoprod='ssh wwwsdev@nlseir204.sn-eu.asml.com'
+alias asmlsshbranchcreateeid='ssh wwwsdev@nleidr081.sn-eu.asml.com'
+alias asmlsshbranchcreatevdh='ssh wwwsdev@nlvdhr196.sn-eu.asml.com'
+
 # Pair programming
 alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick@kabisa.nl>"'
 
-# Custom sripts
+# Custom scripts
 # Find them in ~/.scripts/bin
-alias rails_new='sh rails_new'
+#alias rails_new='sh rails_new'
+
+alias simpleserver='python -m SimpleHTTPServer 8000'
 
 # Functions
 #
@@ -163,3 +180,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export ANSIBLE_HOSTS=hosts.local
 export ANDROID_HOME=/usr/local/opt/android-sdk
+

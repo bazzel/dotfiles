@@ -13,9 +13,6 @@
 [submodule "home/.janus/vim-airline"]
   path = home/.janus/vim-airline
   url = https://github.com/bling/vim-airline.git
-[submodule "home/.janus/vim-mustache-handlebars"]
-  path = home/.janus/vim-mustache-handlebars
-  url = git://github.com/mustache/vim-mustache-handlebars.git
 [submodule "home/.janus/emmet-vim"]
   path = home/.janus/emmet-vim
   url = https://github.com/mattn/emmet-vim.git
@@ -23,5 +20,11 @@
   path = home/.janus/smartest
   url = https://github.com/kurko/smartest.vim
 [submodule "home/.janus/vim-rbenv"]
-	path = home/.janus/vim-rbenv
-	url = https://github.com/tpope/vim-rbenv
+  path = home/.janus/vim-rbenv
+  url = https://github.com/tpope/vim-rbenv
+[submodule "home/.janus/vim-elixir"]
+  path = home/.janus/vim-elixir
+  url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "home/.janus/elm-vim"]
+	path = home/.janus/elm-vim
+	url = https://github.com/ElmCast/elm-vim.git

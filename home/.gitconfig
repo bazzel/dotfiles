@@ -20,6 +20,15 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_users.git"]
+  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_users.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_releases.git"]
+  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_releases.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/rack-mini-profiler.git"]
+  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/rack-mini-profiler.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_cwbd.git"]
+  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_cwbd.git
