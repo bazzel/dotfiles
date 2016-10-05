@@ -3,7 +3,8 @@ let g:airline_powerline_fonts = 1
 let g:mustache_abbreviations = 1
 set nocompatible   " Disable vi-compatibility
 set laststatus=2   " Always show the statusline
-set encoding=utf-8 " Necessary to show Unicode glyphs
+"set encoding=utf-8 " Necessary to show Unicode glyphs " Commented out because
+"of neovim
 set fileencoding=utf-8
 set t_Co=256 " Explicitly tell Vim that the terminal supports 256 colors
 
