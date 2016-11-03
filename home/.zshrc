@@ -181,3 +181,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export ANSIBLE_HOSTS=hosts.local
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
+# https://github.com/creationix/nvm
+source $(brew --prefix nvm)/nvm.sh
