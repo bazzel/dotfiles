@@ -14,21 +14,37 @@
 [alias]
   releasenotes = "!git log ${1}.. --pretty=format:'%h - %Cgreen%ad%Creset - %an: %C(bold white)%s%Creset' --grep=pivotal --date=short"
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
 
 [url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_users.git"]
-  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_users.git
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_users.git
 [url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_releases.git"]
-  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_releases.git
-[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/rack-mini-profiler.git"]
-  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/rack-mini-profiler.git
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_releases.git
 [url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_cwbd.git"]
-  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_cwbd.git
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_cwbd.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/actioncable-pgp-poc.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/actioncable-pgp-poc.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/rack-mini-profiler.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/rack-mini-profiler.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/pgp.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/pgp.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/pdf_cc_api.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/pdf_cc_api.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/patch-generate.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/patch-generate.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml-dashboard.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml-dashboard.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/sedeh/puppet-seiprd.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/sedeh/puppet-seiprd.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/customer_approval.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/customer_approval.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/lpat.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/lpat.git

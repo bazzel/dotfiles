@@ -53,14 +53,14 @@ export BUNDLER_EDITOR=vim
 
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
-export PATH=/usr/local/share/npm/bin:$PATH
+#export PATH=/usr/local/share/npm/bin:$PATH
 # Add project-specific binstubs to PATH:
 export PATH=./bin:$PATH
 #export PATH="$PATH:~/.scripts/bin"
 
 # http://golang.org/doc/code.html#GOPATH
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+#export GOPATH=$HOME/go
+#export PATH=$PATH:$GOPATH/bin
 
 # Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
 export LC_ALL=en_US.UTF-8
@@ -78,7 +78,7 @@ export TACTIC_ASSET_CHECKIN_ROOT='/Volumes/2013-5023_ossassetbackup_ux'
 # End Philips OSS
 #
 # ASML
-export ORACLE_HOME=/usr/local/oracle/instantclient_11_2
+export ORACLE_HOME=/usr/local/oracle/instantclient_12_1
 export OCI_DIR=$ORACLE_HOME
 #export LD_LIBRARY_PATH=$ORACLE_HOME/lib
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
@@ -182,4 +182,5 @@ export ANSIBLE_HOSTS=hosts.local
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
 # https://github.com/creationix/nvm
-source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR="/Users/patrick/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

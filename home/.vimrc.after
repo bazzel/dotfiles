@@ -67,3 +67,5 @@ Plug 'heartsentwined/vim-emblem'
 Plug 'tpope/vim-rbenv'
 Plug 'ecomba/vim-ruby-refactoring'
 call plug#end()
+
+let g:elm_format_autosave = 1
