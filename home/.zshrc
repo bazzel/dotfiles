@@ -140,6 +140,12 @@ alias hcd='homesick commit dotfiles'
 alias hpd='homesick push dotfiles'
 alias hsd='homesick symlink dotfiles'
 
+# brew
+alias bi='brew install'
+alias bci='brew cask install'
+alias bs='brew search'
+alias bcs='brew cask search'
+
 # ASML
 alias asmlsshpdflithostag='ssh wwwsdev@nlseir201.sn-eu.asml.com'
 alias asmlsshpdflithoprod='ssh wwwsdev@nlseir202.sn-eu.asml.com'
@@ -157,14 +163,6 @@ alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick
 
 alias simpleserver='python -m SimpleHTTPServer 8000'
 
-# Functions
-#
-#
-# mrt (my rails templates)...
-mrt() {
-  bundle exec rake rails:template LOCATION=~/code/personal/rails-templates/"$*".rb
-}
-
 # pyenv: enable shims and autocompletion:
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
@@ -178,9 +176,5 @@ if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-export ANSIBLE_HOSTS=hosts.local
-export ANDROID_HOME=/usr/local/opt/android-sdk
-
-# https://github.com/creationix/nvm
-export NVM_DIR="/Users/patrick/.nvm"
+export NVM_DIR="/Users/patrickbaselier/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
