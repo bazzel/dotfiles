@@ -1,6 +1,6 @@
 [user]
-  name = Patrick Baselier
-  email = patrick.baselier@gmail.com
+	name = 
+	email = 
 [color]
   ui = auto
   diff = auto
@@ -8,17 +8,17 @@
   branch = auto
 [core]
   editor = /usr/local/bin/vim
-  excludesfile = /Users/patrickbaselier/.gitignore_global
+	excludesfile = /Users/patrick/.gitignore_global
 [push]
   default = current
 [alias]
   releasenotes = "!git log ${1}.. --pretty=format:'%h - %Cgreen%ad%Creset - %an: %C(bold white)%s%Creset' --grep=pivotal --date=short"
 [difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
@@ -48,3 +48,5 @@
  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/customer_approval.git
 [url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/lpat.git"]
  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/lpat.git
+[commit]
+	template = /Users/patrick/.stCommitMsg

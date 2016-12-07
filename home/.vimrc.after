@@ -54,20 +54,6 @@ map <Leader>"2' :%s/\"\(.\{-}\)\"/\'\1\'/gc<CR>
 " Replace single quotes in opened file with double quotes
 map <Leader>'2" :%s/\'\(.\{-}\)\'/\"\1\"/gc<CR>
 
-call plug#begin('~/.vim/plugged')
-Plug 'ElmCast/elm-vim'
-Plug 'mattn/emmet-vim'
-Plug 'kurko/smartest.vim'
-Plug 'godlygeek/tabular'
-Plug 'bling/vim-airline'
-Plug 'jgdavey/vim-blockle'
-Plug 'elixir-lang/vim-elixir'
-Plug 'elixir-lang/vim-elixir'
-Plug 'heartsentwined/vim-emblem'
-Plug 'tpope/vim-rbenv'
-Plug 'ecomba/vim-ruby-refactoring'
-call plug#end()
-
 let g:elm_format_autosave = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
