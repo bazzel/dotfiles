@@ -18,8 +18,15 @@
 # less -r
 
 --ignore-dir=tmp/
-#--ignore-dir=bower_components/
+--ignore-dir=bower_components/
 --ignore-dir=dist/
+--ignore-dir=vendor/
+--ignore-dir=log/
+--ignore-dir=.yardoc/
+--ignore-dir=coverage/
+--ignore-dir=data/
+--ignore-file=is:.byebug_history
+--ignore-file=is:tags
 
 #make sure ack knows how to search common filetypes used in rails projects
 --type-add=css=scss

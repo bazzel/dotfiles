@@ -68,46 +68,20 @@ export LANG=en_US.UTF-8
 
 # Projects
 #
-# Philips OSS
-export OSS_ROOT='~/code/philips-oss'
-export OSSYOR_ROOT="${OSS_ROOT}/ossyor"
-export OSSPUBLISH_ROOT="${OSS_ROOT}/osspublish"
-export OSSACT_ROOT="${OSS_ROOT}/ossact"
-export OSSYOR_DOMAIN='pwl.philips.com'
-export TACTIC_ASSET_CHECKIN_ROOT='/Volumes/2013-5023_ossassetbackup_ux'
-# End Philips OSS
-#
 # ASML
-export ORACLE_HOME=/usr/local/oracle/instantclient_12_1
-export OCI_DIR=$ORACLE_HOME
-#export LD_LIBRARY_PATH=$ORACLE_HOME/lib
-export NLS_LANG="AMERICAN_AMERICA.UTF8"
-export PATH=$PATH:$ORACLE_HOME
-# End ASML
 #
+export NLS_LANG="AMERICAN_AMERICA.UTF8"
+#
+# End ASML
 # End Projects
 
 # Aliases
 #
-alias tmux-ossyor="teamocil --here --layout ~/.teamocil/ossyor.yml"
-alias tmux-osspublish="teamocil --here --layout ~/.teamocil/osspublish.yml"
-alias tmux-ossact="teamocil --here --layout ${OSSACT_ROOT}/scripts/asset-structure-builder/tools/teamocil.yml"
-alias tmux-osstactic="teamocil --here --layout ${OSSACT_ROOT}/tactic/python_scripts/tools/teamocil.yml"
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
-alias spl='ssh pairing@localhost'
-# content
-alias soc="ssh ubuntu@origin.www.content.pwl.philips.com -i ~/.ssh/developers.pem"
-# demo
-alias sod="ssh ubuntu@origin.www.demo.pwl.philips.com -i ~/.ssh/developers.pem"
-# unity test
-#alias soun='ssh ubuntu@54.228.193.84 -i ~/.ssh/developers.pem'
-alias soun="ssh ubuntu@origin.www.unity.pwl.philips.com -i ~/.ssh/developers.pem"
-# user test
-alias sous="ssh ubuntu@origin.www.test.pwl.philips.com -i ~/.ssh/philips.pem"
-# staging
-alias sos="ssh ubuntu@origin.www.staging.pwl.philips.com -i ~/.ssh/philips.pem"
-# production
-alias sop="ssh ubuntu@origin.www.pwl.philips.com -i ~/.ssh/philips.pem"
+alias 4m='bin/foreman '
+alias 4ms='4m start '
+alias 4mr='4m run '
 
 alias ag='alias | grep '
 alias gi='gem install '
@@ -115,7 +89,7 @@ alias gi='gem install '
 # Rails, cuke and more
 alias gpr='git remote prune origin' # Always forget this one...
 alias gba='git fetch && git branch -a'
-alias wip='bin/rake cucumber:wip'
+alias wip='RAILS_ENV=test bin/rake cucumber:wip'
 alias rtg='bin/rake -T | grep ' # Grep rake tasks: rtg database
 alias zues='zeus'
 alias zcu='zeus cucumber'
@@ -161,7 +135,7 @@ alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick
 # Find them in ~/.scripts/bin
 #alias rails_new='sh rails_new'
 
-alias simpleserver='python -m SimpleHTTPServer 8000'
+alias simpleserver='python -m SimpleHTTPServer '
 
 # pyenv: enable shims and autocompletion:
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
