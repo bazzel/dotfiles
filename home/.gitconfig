@@ -24,33 +24,40 @@
   smudge = git-lfs smudge %f
   required = true
 
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/asml_users.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/asml_users.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/asml_releases.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/asml_releases.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/asml_cwbd.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/asml_cwbd.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/actioncable-pgp-poc.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/actioncable-pgp-poc.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/rack-mini-profiler.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/rack-mini-profiler.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/pgp.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/pgp.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/pdf_cc_api.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/pdf_cc_api.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/patch-generate.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/patch-generate.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/asml-dashboard.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/asml-dashboard.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/sedeh/puppet-seiprd.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/sedeh/puppet-seiprd.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/customer_approval.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/customer_approval.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/releasetooling.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/releasetooling.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/lpat.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/lpat.git
-[url "http://pbaselie@nlvdhm733.sn-eu.asml.com/scm/lpt/fco_ng.git"]
- insteadOf = ssh://git@boa-srm-eid.asml.com:7999/lpt/fco_ng.git
+[diff]
+    tool = icdiff
+[difftool]
+    prompt = false
+[difftool "icdiff"]
+    cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_users.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_users.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_releases.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_releases.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml_cwbd.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml_cwbd.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/actioncable-pgp-poc.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/actioncable-pgp-poc.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/rack-mini-profiler.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/rack-mini-profiler.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/pgp.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/pgp.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/pdf_cc_api.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/pdf_cc_api.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/patch-generate.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/patch-generate.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/asml-dashboard.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/asml-dashboard.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/sedeh/puppet-seiprd.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/sedeh/puppet-seiprd.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/customer_approval.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/customer_approval.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/releasetooling.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/releasetooling.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/lpat.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/lpat.git
+[url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/fco_ng.git"]
+ insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/fco_ng.git
 [commit]
   template = /Users/patrickbaselier/.stCommitMsg
