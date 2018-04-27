@@ -56,6 +56,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 #export PATH=/usr/local/share/npm/bin:$PATH
 # Add project-specific binstubs to PATH:
 export PATH=./bin:$PATH
+export PATH=node_modules/.bin:$PATH
 #export PATH="$PATH:~/.scripts/bin"
 
 # http://golang.org/doc/code.html#GOPATH
@@ -85,6 +86,7 @@ alias 4mr='4m run '
 
 alias ag='alias | grep '
 alias gi='gem install '
+alias gdt='git difftool ' # https://github.com/cockroachdb/cockroach/wiki/Git-diff-side-by-side
 
 # Rails, cuke and more
 alias gpr='git remote prune origin' # Always forget this one...
@@ -96,7 +98,7 @@ alias zcu='zeus cucumber'
 alias zwip='zeus cucumber -r features -p wip'
 alias zr='zeus rake'
 # Middleman (middlemanapp.com)
-alias mm='middleman'
+alias mm='bin/middleman'
 alias mmb='mm build'
 alias mmi='mm init'
 alias mmd='mm deploy'
@@ -119,14 +121,6 @@ alias bi='brew install'
 alias bci='brew cask install'
 alias bs='brew search'
 alias bcs='brew cask search'
-
-# ASML
-alias asmlsshpdflithostag='ssh wwwsdev@nlseir201.sn-eu.asml.com'
-alias asmlsshpdflithoprod='ssh wwwsdev@nlseir202.sn-eu.asml.com'
-alias asmlsshfcolithostag='ssh wwwsdev@nlseir203.sn-eu.asml.com'
-alias asmlsshfcolithoprod='ssh wwwsdev@nlseir204.sn-eu.asml.com'
-alias asmlsshbranchcreateeid='ssh wwwsdev@nleidr081.sn-eu.asml.com'
-alias asmlsshbranchcreatevdh='ssh wwwsdev@nlvdhr196.sn-eu.asml.com'
 
 # Pair programming
 alias cmapa='git commit --amend --author="Matthijs and Patrick <matthijs+patrick@kabisa.nl>"'
@@ -152,3 +146,15 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 export NVM_DIR="/Users/patrickbaselier/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Proxy
+# See also http://blog.hoachuck.biz/blog/2013/03/21/howto-set-cntlm-on-mac-os-x/
+location=`/usr/sbin/networksetup -getcurrentlocation`
+if [ $location = "A5ML-Wl@N" ]; then
+  export http_proxy=http://localhost:3128
+  export https_proxy=http://localhost:3128
+else
+  export http_proxy=
+  export https_proxy=
+fi
+export no_proxy="127.0.0.1, localhost"
