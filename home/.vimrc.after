@@ -61,3 +61,44 @@ let g:elm_syntastic_show_warnings = 1
 
 " Let syntastic ignore hbs files
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+call plug#begin('~/.vim/plugged')
+Plug 'ElmCast/elm-vim'
+Plug 'mattn/emmet-vim'
+Plug 'kurko/smartest.vim'
+Plug 'godlygeek/tabular'
+Plug 'bling/vim-airline'
+Plug 'elixir-lang/vim-elixir'
+Plug 'heartsentwined/vim-emblem'
+Plug 'tpope/vim-rbenv'
+Plug 'ecomba/vim-ruby-refactoring'
+Plug 'isRuslan/vim-es6'
+Plug 'https://github.com/adelarsq/vim-matchit'
+Plug 'jgdavey/vim-blockle'
+Plug 'https://github.com/AndrewRadev/ember_tools.vim'
+Plug 'https://github.com/dsawardekar/portkey'
+Plug 'https://github.com/dsawardekar/ember.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
+""Plug 'Quramy/tsuquyomi'
+call plug#end()
+call plug#begin('~/.vim/plugged')
+Plug 'ElmCast/elm-vim'
+Plug 'mattn/emmet-vim'
+Plug 'kurko/smartest.vim'
+Plug 'godlygeek/tabular'
+Plug 'bling/vim-airline'
+Plug 'elixir-lang/vim-elixir'
+Plug 'heartsentwined/vim-emblem'
+Plug 'tpope/vim-rbenv'
+Plug 'ecomba/vim-ruby-refactoring'
+Plug 'isRuslan/vim-es6'
+Plug 'https://github.com/adelarsq/vim-matchit'
+Plug 'jgdavey/vim-blockle'
+Plug 'https://github.com/AndrewRadev/ember_tools.vim'
+Plug 'https://github.com/dsawardekar/portkey'
+Plug 'https://github.com/dsawardekar/ember.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
+""Plug 'Quramy/tsuquyomi'
+call plug#end()
