@@ -87,7 +87,6 @@ alias 4mr='4m run '
 alias ag='alias | grep '
 alias gi='gem install '
 alias gdt='git difftool ' # https://github.com/cockroachdb/cockroach/wiki/Git-diff-side-by-side
-alias gitshowtagbydate='git log --tags --simplify-by-decoration --pretty="format:%ai %d"'
 
 # Rails, cuke and more
 alias gpr='git remote prune origin' # Always forget this one...
