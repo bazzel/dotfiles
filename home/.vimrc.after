@@ -30,6 +30,26 @@ autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 au! BufRead,BufNewFile *.hamlc setfiletype haml
 autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 
+" vim-prettier
+" https://github.com/prettier/vim-prettier
+let g:prettier#quickfix_enabled = 0
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+let g:prettier#config#print_width = 80
+let g:prettier#config#tab_width = 2
+let g:prettier#config#use_tabs = 'false'
+let g:prettier#config#semi = 'true'
+let g:prettier#config#single_quote = 'true'
+let g:prettier#config#bracket_spacing = 'false'
+let g:prettier#config#jsx_bracket_same_line = 'true'
+let g:prettier#config#arrow_parens = 'always'
+let g:prettier#config#trailing_comma = 'all'
+let g:prettier#config#parser = 'flow'
+let g:prettier#config#config_precedence = 'prefer-file'
+let g:prettier#config#prose_wrap = 'preserve'
+"
+" END vim-prettier
+
 " Enable autocomplete
 " autocomplete with Ctrl+x, Ctrl+o
 filetype plugin on
@@ -61,24 +81,3 @@ let g:elm_syntastic_show_warnings = 1
 
 " Let syntastic ignore hbs files
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
-
-"call plug#begin('~/.vim/plugged')
-"Plug 'ElmCast/elm-vim'
-"Plug 'mattn/emmet-vim'
-"Plug 'kurko/smartest.vim'
-"Plug 'godlygeek/tabular'
-"Plug 'bling/vim-airline'
-"Plug 'elixir-lang/vim-elixir'
-"Plug 'heartsentwined/vim-emblem'
-"Plug 'tpope/vim-rbenv'
-"Plug 'ecomba/vim-ruby-refactoring'
-"Plug 'isRuslan/vim-es6'
-"Plug 'https://github.com/adelarsq/vim-matchit'
-"Plug 'jgdavey/vim-blockle'
-"Plug 'https://github.com/AndrewRadev/ember_tools.vim'
-"Plug 'https://github.com/dsawardekar/portkey'
-"Plug 'https://github.com/dsawardekar/ember.vim'
-"Plug 'leafgarland/typescript-vim'
-"Plug 'HerringtonDarkholme/yats.vim'
-"""Plug 'Quramy/tsuquyomi'
-"call plug#end()

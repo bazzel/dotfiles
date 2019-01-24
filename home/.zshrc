@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="wezm"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -54,9 +54,11 @@ export BUNDLER_EDITOR=vim
 export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 #export PATH=/usr/local/share/npm/bin:$PATH
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH=node_modules/.bin:$PATH
 # Add project-specific binstubs to PATH:
 export PATH=./bin:$PATH
-export PATH=node_modules/.bin:$PATH
 #export PATH="$PATH:~/.scripts/bin"
 
 # http://golang.org/doc/code.html#GOPATH
@@ -91,7 +93,7 @@ alias gdt='git difftool ' # https://github.com/cockroachdb/cockroach/wiki/Git-di
 # Rails, cuke and more
 alias gpr='git remote prune origin' # Always forget this one...
 alias gba='git fetch && git branch -a'
-alias wip='RAILS_ENV=test bin/rake cucumber:wip'
+alias wip='bin/rails cucumber:wip'
 alias rtg='bin/rake -T | grep ' # Grep rake tasks: rtg database
 alias zues='zeus'
 alias zcu='zeus cucumber'
@@ -141,12 +143,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 if which direnv > /dev/null; then eval "$(direnv hook zsh)"; fi
 
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export NVM_DIR="/Users/patrickbaselier/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # Proxy
 # See also http://blog.hoachuck.biz/blog/2013/03/21/howto-set-cntlm-on-mac-os-x/
 location=`/usr/sbin/networksetup -getcurrentlocation`
@@ -157,4 +153,11 @@ else
   export http_proxy=
   export https_proxy=
 fi
-export no_proxy="127.0.0.1, localhost"
+export no_proxy="127.0.0.1, localhost, boa-arm-eid.asml.com"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export NVM_DIR="/Users/patrickbaselier/.nvm"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+

@@ -18,6 +18,7 @@
 # less -r
 
 --ignore-dir=tmp/
+--ignore-dir=public/packs/
 --ignore-dir=bower_components/
 --ignore-dir=dist/
 --ignore-dir=vendor/

@@ -1,6 +1,6 @@
 [user]
-  name =
-  email =
+	name = Patrick Baselier
+	email = patrick.baselier@gmail.com
 [color]
   ui = auto
   diff = auto
@@ -61,3 +61,5 @@
  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/fco_ng.git
 [commit]
   template = /Users/patrickbaselier/.stCommitMsg
+[icdiff]
+	options = --highlight --line-numbers
