@@ -1,23 +1,26 @@
 call plug#begin('~/.vim/plugged')
-"Plug 'ElmCast/elm-vim'
-Plug 'lambdatoast/elm.vim'
-Plug 'mattn/emmet-vim'
-Plug 'kurko/smartest.vim'
-Plug 'godlygeek/tabular'
 Plug 'bling/vim-airline'
-Plug 'elixir-lang/vim-elixir'
-Plug 'heartsentwined/vim-emblem'
-Plug 'tpope/vim-rbenv'
 Plug 'ecomba/vim-ruby-refactoring'
+"Plug 'elixir-lang/vim-elixir'
+"Plug 'ElmCast/elm-vim'
+Plug 'godlygeek/tabular'
+"Plug 'heartsentwined/vim-emblem'
+Plug 'kurko/smartest.vim'
+"Plug 'lambdatoast/elm.vim'
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-rbenv'
 Plug 'isRuslan/vim-es6'
 Plug 'https://github.com/adelarsq/vim-matchit'
 Plug 'jgdavey/vim-blockle'
-Plug 'https://github.com/AndrewRadev/ember_tools.vim'
+"Plug 'AndrewRadev/ember_tools.vim' "Tools for working with ember projects
+"Plug 'joukevandermaas/vim-ember-hbs' "Ember Handlebars/HTMLBars plugin for Vim with indentation support
+"Plug 'sukima/vim-ember-imports' "Add and Update Ember import statements
 Plug 'https://github.com/dsawardekar/portkey'
-Plug 'https://github.com/dsawardekar/ember.vim'
-Plug 'leafgarland/typescript-vim'
+"Plug 'https://github.com/dsawardekar/ember.vim'
+"Plug 'leafgarland/typescript-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'stefanoverna/vim-i18n' " Easily add I18n translations to your Rails project
 ""Plug 'Quramy/tsuquyomi'
 call plug#end()
 

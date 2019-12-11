@@ -34,7 +34,7 @@ autocmd BufRead,BufNewFile *.es6 setfiletype javascript
 " https://github.com/prettier/vim-prettier
 let g:prettier#quickfix_enabled = 0
 let g:prettier#autoformat = 0
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html,*.rb Prettier
 let g:prettier#config#print_width = 80
 let g:prettier#config#tab_width = 2
 let g:prettier#config#use_tabs = 'false'
@@ -77,7 +77,13 @@ map <Leader>'2" :%s/\'\(.\{-}\)\'/\"\1\"/gc<CR>
 let g:elm_format_autosave = 1
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
+let g:syntastic_eruby_ruby_quiet_messages = {'regex': 'possibly useless use of a variable in void context'}
 let g:elm_syntastic_show_warnings = 1
 
 " Let syntastic ignore hbs files
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+" vim-i18n
+vmap <Leader>z :call I18nTranslateString()<CR>
+vmap <Leader>dt :call I18nDisplayTranslation()<CR>
+" End vim-i18n
