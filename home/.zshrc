@@ -46,6 +46,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export BUNDLER_EDITOR=vim
+export EDITOR=vim
 
 # autojump
 # https://github.com/joelthelion/autojump
@@ -68,6 +69,7 @@ export PATH=./bin:$PATH
 # Make sure terminal locale settings are set to UTF-8 or tmux will start acting weird
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
 
 # Projects
 #

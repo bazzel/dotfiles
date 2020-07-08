@@ -8,7 +8,7 @@
   branch = auto
 [core]
   editor = /usr/local/bin/vim
-  excludesfile = /Users/patrickbaselier/.gitignore_global
+	excludesfile = /Users/patrickbaselier/.gitignore_global
 [push]
   default = current
 [alias]
@@ -17,7 +17,7 @@
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [filter "lfs"]
   clean = git-lfs clean %f
@@ -60,6 +60,6 @@
 [url "http://pbaselie@boa-srm.asml.com:7990/scm/lpt/fco_ng.git"]
  insteadOf = ssh://git@boa-srm.asml.com:7999/lpt/fco_ng.git
 [commit]
-  template = /Users/patrickbaselier/.stCommitMsg
+	template = /Users/patrickbaselier/.stCommitMsg
 [icdiff]
 	options = --highlight --line-numbers
