@@ -1,0 +1,53 @@
+{
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[ruby]": {
+    "editor.formatOnSave": true
+  },
+
+  "eslint.alwaysShowStatus": true,
+  "eslint.run": "onSave",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.packageManager": "yarn",
+  "emmet.triggerExpansionOnTab": true,
+  "tailwindCSS.emmetCompletions": true,
+  "sqltools.useNodeRuntime": true,
+  "window.zoomLevel": 0,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "terminal.external.osxExec": "iterm.app",
+  "solargraph.formatting": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "solargraph.diagnostics": true,
+  "liveshare.account": "",
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.views.repositories.location": "scm",
+  "gitlens.views.fileHistory.location": "explorer",
+  "gitlens.views.lineHistory.location": "explorer",
+  "gitlens.views.compare.location": "gitlens",
+  "gitlens.views.search.location": "gitlens",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "emmet.includeLanguages": {
+    "html.erb": "html",
+    "html.slim": "html"
+  },
+  "editor.tabCompletion": "on",
+  "editor.fontSize": 13,
+  "terminal.integrated.fontSize": 13,
+  "cucumberautocomplete.customParameters": [],
+  "cucumberautocomplete.steps": ["features/step_definitions/*.rb"],
+  "cucumberautocomplete.syncfeatures": "features/*feature",
+  "code-runner.executorMapByGlob": {
+    "*.feature": "bin/cucumber"
+  },
+  "workbench.editorAssociations": [
+    {
+      "viewType": "vscode.markdown.preview.editor",
+      "filenamePattern": "*.md"
+    }
+  ]
+}
